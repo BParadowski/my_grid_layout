@@ -17,9 +17,14 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+}
+
 .layout-container {
   display: grid;
   grid-template: 175px 1fr/auto 1fr;
+  flex-grow: 1;
 }
 
 .dashboard {
@@ -29,8 +34,7 @@ a {
   padding: 15px 45px 100% 15px;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: -webkit-min-content;
-  grid-template-rows: min-content;
+  grid-template-rows: 48px repeat(auto-fit, 24px);
   align-items: flex-end;
   gap: 15px;
 }
