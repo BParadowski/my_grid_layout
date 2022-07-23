@@ -34,7 +34,6 @@ a{
     grid-template-columns: auto 1fr;
     grid-template-rows: min-content;
     align-items: flex-end;
- 
     gap: 15px;
 
     &__icon {
@@ -64,6 +63,7 @@ a{
         font-weight: 700;
         font-size: 25px;
         letter-spacing: 0.2rem;
+        align-self: center;
     }
 }
 

@@ -57,6 +57,7 @@ a {
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 0.2rem;
+  align-self: center;
 }
 
 .content {
