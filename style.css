@@ -7,23 +7,31 @@
 :root {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
   --blue: #3b82f6;
   --yellow: #facc15;
+  --gray: #e5e5e5;
 }
 
 a {
   text-decoration: none;
 }
 
+.layout-container {
+  display: grid;
+  grid-template: 175px 1fr/auto 1fr;
+}
+
 .dashboard {
   background-color: var(--blue);
   color: white;
+  grid-row: 1/-1;
+  padding: 15px 45px 100% 15px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: -webkit-min-content;
   grid-template-rows: min-content;
   align-items: flex-end;
-  padding: 15px;
   gap: 15px;
 }
 .dashboard__icon {
@@ -49,4 +57,8 @@ a {
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 0.2rem;
+}
+
+.content {
+  background-color: var(--gray);
 }/*# sourceMappingURL=style.css.map */
