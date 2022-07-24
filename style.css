@@ -231,6 +231,7 @@ body, html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 .trending__desc {
   display: flex;
