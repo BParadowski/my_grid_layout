@@ -71,7 +71,7 @@ body, html {
   display: grid;
   grid-template: 1fr 1fr/1fr;
   gap: 15px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
 .nav__top-container {
@@ -136,4 +136,50 @@ body, html {
 
 .content {
   background-color: var(--gray);
+  padding: 15px;
+  display: grid;
+  grid-template: auto 1fr auto 1fr/8fr 3fr;
+  gap: 15px;
+}
+.content__title {
+  font-size: 22px;
+  letter-spacing: 0.1rem;
+  padding-left: 8px;
+}
+
+.projects {
+  grid-row: 2/-1;
+  display: grid;
+  grid-template: auto/1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border-left: 8px solid var(--yellow);
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 25px 15px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card__text {
+  text-overflow: clip;
+  overflow: hidden;
+  line-height: 1.4;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: 1;
+}
+.card__icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.card:hover {
+  outline: var(--yellow) solid 2px;
 }/*# sourceMappingURL=style.css.map */
